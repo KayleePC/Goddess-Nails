@@ -1,0 +1,112 @@
+#toptxt {
+    color:#004173;
+    text-align: center;
+    font-style: italic;
+    font-size:large;
+    font-weight: 300;
+    padding: 10px;
+    width:70%;
+    margin-left: 15%;
+    border-style: solid;
+    border-color:#F2D263;
+    border-radius: 15px;}
+h2 {
+        display: block;
+        font-size: xx-large;
+        text-align:center;
+        color:#004173;
+        font-style: italic;
+        font-weight: bold;
+    }
+body{
+        background-color:#d6e4e7;
+        }
+html, body {
+        height: 100%;
+        }
+#listtxt{   color:#004173;
+    text-align: center;
+    font-style: italic;
+    font-size:large;
+    font-weight: 300;
+    padding: 10px;
+    width:70%;
+    margin-left: 15%;
+    border-style: solid;
+    border-color:#F2D263;
+    border-radius: 15px;}
+        .dropbtn {
+            background-color: #004173;
+            color:#d6e4e7;
+            padding: 16px;
+            font-size: 16px;
+            font-style: italic;
+            border-radius: 15px;
+            border-color: #004173;
+          }
+            .dropdown {
+            position: relative;
+            display: inline-block;
+          }
+            .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #F2D263;
+            border-radius: 15px;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+          }
+          .dropdown-content a {
+            color: #004173;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+          }
+          .dropdown-content a:hover {background-color: #f5de8b;
+                                    border-radius: 15px;}
+          .dropdown:hover .dropdown-content {
+            font-style: italic;  
+            display: block;}
+          .dropdown:hover .dropbtn {background-color: #004173;}
+          .contact {
+            margin-top: 15px;
+            border-radius: 15px;
+            border-color: #F2D263;
+            color:#004173;
+            text-align: center;
+            font-style: italic;
+            font-size: medium;
+            font-weight: 300;
+            padding: 10px;
+            border-style: solid;
+            width: 70%;
+            margin-left: 15%;
+        }
+        h3{
+            text-align: center;
+        }
+        input {
+            background-color: #F2D263;
+            color:#004173;
+            border-radius: 15px;
+            border-color: #F2D263;
+        }
+        textarea {
+            resize: both;
+            background-color: #F2D263;
+            color:#004173;
+            border-radius: 15px;
+            border-color: #F2D263;
+        }
+        .backtotop {
+            text-align: center;
+            background-color: #F2D263;
+            color:#004173;
+            border-radius: 15px;
+            margin:0 auto;
+            display: block;
+            border-color: #F2D263;
+            font-style:italic;
+            border-top: 5px;
+        }        
