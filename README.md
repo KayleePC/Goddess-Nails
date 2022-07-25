@@ -1,2 +1,2 @@
-# Goddess-Nails
-Project repository for CodeKY
+# Nail-Salon
+project for code KY 2.0

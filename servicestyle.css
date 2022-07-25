@@ -1,3 +1,10 @@
+.header.img {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  width: 300px;
+}
+
 #toptxt {
     color:#004173;
     text-align: center;
@@ -34,7 +41,8 @@ html, body {
     margin-left: 15%;
     border-style: solid;
     border-color:#F2D263;
-    border-radius: 15px;}
+    border-radius: 15px;
+      }
         .dropbtn {
             background-color: #004173;
             color:#d6e4e7;
