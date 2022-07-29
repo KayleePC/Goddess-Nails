@@ -22,7 +22,7 @@ buttons.forEach((button, i) => {
     button[0].classList.add("carousel_button");
 });
     });*/
-const buttons = document.querySelectorAll("[data-carousel-button]")
+/*const buttons = document.querySelectorAll("[data-carousel-button]")
 
 buttons.forEach(button => {
     button.addEventListener("click", () => {
@@ -36,4 +36,4 @@ buttons.forEach(button => {
         slides.children[newIndex].dataset.active = true
         delete activeSlide.dataset.active
     })
-})
+})*/

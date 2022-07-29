@@ -2,6 +2,8 @@
 <html>
 <link rel="stylesheet" type="text/css" href="style.css"/>
 <link rel="javascript" type="text/js" href="java.js"/>
+<meta http-equiv="X-UA-Compatible" content="IE-edge">
+<meta name="viewport" content="width=device-width; initial-scale=1.0">
 <title> Goddess Nails Salon</title>
 <a id="top"></a>    
 <div class="dropdown">
@@ -23,10 +25,50 @@
 
 <body>
 <h2>Monica</h2>
-<div class="carousel" data-carousel>
+<section class="carousel">
+    <div class="container-slide">
+        <div class="slider-wrap1">
+            <div class="slider-main1" id="slider-main1">
+                <div class="item1">
+                    <div class="test"><img src="./Images/acrylic nails 4 artist image.jpg" style="width: 200px; height: 200px;"/></div>
+                </div>
+                <div class="item1">
+                    <div class="test"><img src="./Images/flower nails 4 artist image.jpg" style="width: 200px; height: 200px;"/></div>
+                </div>
+                <div class="item1">
+                    <div class="test"><img src="./Images/ nail art 4 artist image.jpg" style="width: 200px; height: 200px;"/></div>
+                </div>
+                <div class="item1">
+                    <div class="test"><img src="./Images/prom nails 4 artist image.jpg" style="width: 200px; height: 200px;"/></div>
+                </div>
+                <div class="item1">
+                    <div class="test"><img src="./Images/purple acrylic nails 4 artist image.jpg " style="width: 200px; height: 200px;"/></div>
+                </div>
+                <div class="item1">
+                    <div class="test"><img src="./Images/sparkle nail art 4 artist image.jpg" style="width: 200px; height: 200px;"/></div>
+                </div>
+                </div> 
+            </div>                
+           
+    </div>
+</section> 
+<div class="btn-area1">
+                    <button type="button" onclick="prev1()" class="slider-btn1">&#8592;</button>
+                    <button type="button" onclick="next1()" class="slider-btn1">&#8594;</button>
+                </div>
+<script>
+var sliderMain1 = document.getElementById("slider-main1");
+var item1 = sliderMain1.getElementsByClassName("item1");
+function next1(){
+        sliderMain1.append(item1[0]);
+}
+function prev1(){
+    sliderMain1.prepend(item1[item1.length - 1]); }
+    </script>
+<!--<div class="carousel" data-carousel>
     <button class="carousel-button next" data-carousel-button="next">&#8608;</button>
     <button class="carousel-button prev" data-carousel-button="prev">&#8606;</button>
-    <ul data-slides>
+    <ul id="data-slides">
         <li class="slide" data-active>
             <img src="./Images/acrylic nails 4 artist image.jpg" style="width: 200px; height: 200px;"/>
         </li>
@@ -36,16 +78,16 @@
         <li class="slide">
             <img src="./Images/ nail art 4 artist image.jpg" style="width: 200px; height: 200px;"/>
         </li>
-        <li>
+        <li class="slide">
             <img src="./Images/prom nails 4 artist image.jpg" style="width: 200px; height: 200px;"/>
         </li>
-        <li>
-            <img src="./Images/purple acrylic nails 4 artist image.jpg " style="width: 200px; height: 200px;"/>
+        <li class="slide">
+          <img src="./Images/purple acrylic nails 4 artist image.jpg " style="width: 200px; height: 200px;"/>
         </li>
-        <li>
+        <li class="slide">
             <img src="./Images/sparkle nail art 4 artist image.jpg" style="width: 200px; height: 200px;"/>
         </li>
-    </ul>
+    </ul>-->
 <!--</html><div class="carousel">
         <div class="carousel_item"><img src="./Images/acrylic nails 4 artist image.jpg" style="width: 200px; height: 200px;"/></div>
         <div class="carousel_item"><img src="./Images/flower nails 4 artist image.jpg" style="width: 200px; height: 200px;"/></div>
@@ -63,33 +105,56 @@
              </div>
     </div>-->
 </div>
-    <button class="schedule"
+  <!--  <button class="schedule"
             type="button"> 
             Click here to book with Monica
     </button>
     <div class="schedule">
         <a href="tempplacemtn.schedule"></a>
-    </div>
+    </div>-->
 
-<h2>Kayla</h2>
-<div class="carcontainer">
-    <div class="carousel">
-    <div class="carousel_item"><img src="./Images/flower nails 4 artist image.jpg" style="width: 200px; height: 200px;"/></div>
-    <div class="carousel_item"><img src="./Images/yellow nails 4 artist image.jpg" style="width: 200px; height: 200px;"/></div>
-    <div class="carousel_item"><img src="./Images/nail art 4 artist image.jpg" style="width: 200px; height: 200px;"/></div>
-    <div class="carousel_item"><img src="./Images/Pink editorial nails.jpg" style="width: 200px; height: 200px;"/></div>
-    <div class="carousel_item"><img src="./Images/pink french tip nails 4 artist image.jpg" style="width: 200px; height: 200px;"/></div>
-    <div class="carousel_item"><img src="./Images/bridal nails 4 artist image.jpg" style="width: 200px; height: 200px;"/></div>
-        <div class="carousel_nav">
-            <span class="carousel_button"></span> 
-            <span class="carousel_button"></span> 
-            <span class="carousel_button"></span> 
-            <span class="carousel_button"></span> 
-            <span class="carousel_button"></span> 
-            <span class="carousel_button"></span> 
-        </div>
+<h2>Kayla</h2><section class="product">
+    <div class="container-fluid">
+        <div class="slider-wrap2">
+            <div class="slider-main2" id="slider-main2">
+                <div class="item">
+                    <div class="test"><img src="./Images/bridal nails 4 artist image.jpg" style="width: 200px; height: 200px;"/></div>
+                </div>
+                <div class="item">
+                    <div class="test"><img src="./Images/nail print art 4 artist image.jpg" style="width: 200px; height: 200px;"/></div>
+                </div>
+                <div class="item">
+                    <div class="test"><img src="./Images/pink french tip nails 4 artist image.jpg" style="width: 200px; height: 200px;"/></div>
+                </div>
+                <div class="item">
+                    <div class="test"><img src="./Images/Pink editorial nails.jpg" style="width: 200px; height: 200px;"/></div>
+                </div>
+                <div class="item">
+                    <div class="test"><img src="./Images/yellow nails 4 artist image.jpg " style="width: 200px; height: 200px;"/></div>
+                </div>
+                <div class="item">
+                    <div class="test"><img src="./Images/orange nail art 4 artist image.jpg" style="width: 200px; height: 200px;"/></div>
+                </div>
+            </div>
+                      
+        </div> 
+   
     </div>
-</div>
+    <div class="btn-area2">
+                    <button type="button" onclick="prev2()" class="slider-btn2">&#8592;</button>
+                    <button type="button" onclick="next2()" class="slider-btn2">&#8594;</button>
+                </div>
+</section>
+  
+<script>
+    var sliderMain2 = document.getElementById("slider-main2");
+        var item = sliderMain2.getElementsByClassName("item");
+        function next2(){
+                sliderMain2.append(item[0]);
+        }
+        function prev2(){
+            sliderMain2.prepend(item[item.length - 1]); }
+            </script>
    <!-- <div class="container">
         <div class="calendar">
             <div class="month">
@@ -114,10 +179,10 @@
                     </div>
         </div>
     </div>-->
-    <button class="schedule"
+   <!--<button class="schedule"
             type="button"> 
             Click here to book with Kayla
-    </button>
+    </button>-->
 </body>
 <footer>
     <a id="contactform">
@@ -126,14 +191,15 @@
     <form action="/action_page.php">
     <p>Name:<input type="text"></p> 
     <p>Email:<input type="email"></p>
+    <p>Appointment:<input type="text"></p>
     <p>Comments:<textarea calss="comment"></textarea> </p>
     <input type="submit">
     </form>
 </div>
 
-    <button class="backtotop"
+    <center><button class="backtotop"
         type="button">
         <a href="#top"> Back to top</a>   
-    </button>
+    </button></center>
 </footer>
 </html>
