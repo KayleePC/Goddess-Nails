@@ -1,10 +1,8 @@
 <!DOCTYPE html>
 <html>
 <link rel="stylesheet" type="text/css" href="servicestyle.css"/>
-<meta http-equiv="X-UA-Compatible" content="IE-edge">
-<meta name="viewport" content="width=device-width; initial-scale=1.0">
 <title>Services for Goddess Nails Salon</title>
-  <a id="s-top"></a>   
+  
   <div class="dropdown">
     <button class="dropbtn">Menu</button>
     <div class="dropdown-content">
@@ -14,25 +12,23 @@
   </div>
 
 <head>
+    <a id="s-top"></a> 
 <div class="header.img">
-    <center><img src="./Images/Nail salon circle logo.png" style="width: 300px; height: 300px;" alt="Goddess Nails Salon" /></center>
+    <center><img src="./Images/Nail salon circle logo.png" style="width: 350px; height: 350px;" alt="Goddess Nails Salon" /></center>
     </div>
     <div id="toptxt">
         <p> Welcome to our Service Page! Here are the services each of our technicians offer and the prices for them. Please contact us with any questions!</p>       
     </div>
 </head>
 <body>
-    <h2>
-        Monica's Services
-    </h2>
+    <h2>Monica's Services</h2>
     <div id="listtxt">
     <p>Schellac Gel Manicure ~~~ $40</p>
     <p>Manicure ~~~ $30</p> 
     <p>Schellac Gel Pedicure ~~~ $30</p> <p>Pedicure~~~ $20</p>
     <p>Acrylic Nails ~~~ $55</p> <p>Dipping Powder ~~~ $35</p>
     </div>
-    <h2>Kayla's Services
-    </h2>
+    <h2>Kayla's Services</h2>
     <div id="listtxt">
         <p>Manicure ~~~ $30</p>
         <p>Pedicure ~~~ $20</p>
@@ -43,18 +39,38 @@
 </body>
 <footer>
     <a id="contactform">
-    <div class="contact">
-    <h3>Contact Us</h3>
-    <form action="/action_page.php">
-    <p>Name:<input type="text"></p> 
-    <p>Email:<input type="email"></p>
-    <p>Comments:<textarea calss="comment"></textarea> </p>
-    <input type="submit">
-    </form>
-    </div>
-    </a>
-<center><button class="backtostop" type="button">
-    <a href="s-top">Back to Top</a>
-</button></center>
+        <div class="contact">
+            <h3>Contact Us</h3>
+            <form onsubmit="sendEmail(); reset(); return false;">
+            <input type="text" id="name" placeholder="Name"> 
+            <input type="email" id="email" placeholder="Email">
+            <textarea id="appointment" rows="2" placeholder="Appointment Request"></textarea>
+            <textarea id="comment" rows="4" placeholder="Comments"></textarea>
+            <center><button type="submit"; onclick="show_alert();">Submit</button></center>
+            </form>
+        </div>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script>
+            function sendEmail(){
+                Email.send({
+                    Host : "smtp.gmail.com",
+                    Username : "goddessnailssaloncky@gmail.com",
+                    Password : "CodeKY2022",
+                    To : 'goddessnailssaloncky@gmail.com',
+                    From : document.getElementById("email").value,
+                    Subject : "Goddess Nails Contact",
+                    Body : "Name: " + document.getElementById("name").value
+                            + "<br> Email: " + document.getElementById("email").value
+                            + "<br> Appointment: " + document.getElementById("appointment").value
+                            + "<br> Comment: " + document.getElementById("comment").value
+                }).then(
+                    message => alert("Thank you, we will get back to you soon!")
+                );
+            }
+        </script>
+
 </footer>
+<center><button class="backtostop" type="button">
+    <a href="#s-top">Back to Top</a>
+</button></center>
 </html>
