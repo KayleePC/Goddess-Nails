@@ -46,7 +46,7 @@
             <input type="email" id="email" placeholder="Email">
             <textarea id="appointment" rows="2" placeholder="Appointment Request"></textarea>
             <textarea id="comment" rows="4" placeholder="Comments"></textarea>
-            <center><button type="submit"; onclick="show_alert();">Submit</button></center>
+            <center><button type="button" onclick="confirmFunc()">Submit</button></center>
             </form>
         </div>
         <script src="https://smtpjs.com/v3/smtp.js"></script>
@@ -67,6 +67,10 @@
                     message => alert("Thank you, we will get back to you soon!")
                 );
             }
+            function confirmFunc() {
+    var name = document.getElementById("name").value;
+    confirm("Thank you, " +name+ ", we will get back to you soon!");
+};
         </script>
 
 </footer>
